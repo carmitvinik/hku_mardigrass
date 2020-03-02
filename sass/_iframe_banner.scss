@@ -1,0 +1,13 @@
+$iframeHeight:600px;
+
+iframe.banner {
+    height: $iframeHeight;
+    overflow: v;
+}
+
+
+
+.embed-responsive iframe.banner,
+.embed-responsive .embed-responsive-item {
+    height: 80%;
+}

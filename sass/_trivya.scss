@@ -1,0 +1,78 @@
+.trivia {
+
+    color: $grn;
+    margin-top: 25px;
+    height: 30em;
+    overflow-y: scroll;
+    overflow-x: auto;
+
+    font-size: 1rem;
+
+    .questionbox {
+        background-color: $wht;
+        border: 1px solid green;
+        width: fit-content;
+        min-width: 100px;
+        height: fit-content;
+        padding: 25px;
+        font-weight: bolder;
+        margin: 25px;
+        border-radius: 45px;
+
+    }
+
+    .show-correct::after {
+        font-family: $hfont2;
+        letter-spacing: 5px;
+        color: $prp;
+        font-size: 25px;
+        text-shadow: 5px 3px $blk;
+        content: "Correct";
+        background-color: $yel;
+        text-align: center;
+        margin: 25px;
+        padding: 10px;
+        border-radius: 25px;
+        border: 5px ridge $grn;
+        font-weight: bolder;
+        opacity: 0.75;
+        height: 100%;
+        line-height: 10rem;
+
+
+    }
+
+    .show-wrong::after {
+        font-family: $hfont2;
+        letter-spacing: 5px;
+        color: red;
+        font-size: 25px;
+        text-shadow: 5px 3px $yel;
+        content: "wrong";
+        background-color: $blk;
+        text-align: center;
+        margin: 25px;
+        padding: 10px;
+        border-radius: 25px;
+        border: 5px ridge $grn;
+        font-weight: bolder;
+        opacity: 0.75;
+        height: 100%;
+        line-height: 10rem;
+
+    }
+
+    .shed {
+        width: 100%;
+        height: 100%;
+        margin: -25px;
+        background-color: $prp;
+        position: absolute;
+        z-index: 10000;
+        opacity: 0.35;
+        border-radius: inherit;
+
+
+    }
+
+}

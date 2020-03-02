@@ -1,0 +1,98 @@
+//cube
+$faceWidth: 20vw;
+
+.cube {
+
+    box-sizing: border-box;
+    width: calc(#{$faceWidth});
+    height: calc(#{$faceWidth});
+
+    position: relative;
+    transform-style: preserve-3d;
+    perspective-origin: center center;
+    margin: 3em auto;
+    border: 0;
+    /*perspective: 40em;*/
+    transform: rotate3d(-24, -26, 1, 15deg) rotateY(0deg);
+    transform-origin: 50% 50%;
+    background-color: rgba(255, 0, 0, 0);
+    overflow: visible;
+
+
+
+    .face {
+        width: $faceWidth;
+        height: $faceWidth;
+        //background-color: rgba(155, 255, 25, 0.5);
+        background-color: rgba($prp, 0.8);
+        border: 3px groove green;
+        font-size: 25px;
+        text-align: center;
+        position: absolute;
+        box-sizing: border-box;
+
+
+    }
+
+    .face a,
+    .face img {
+        width: inherit;
+        height: inherit;
+    }
+
+    .face h2 {
+        position: absolute;
+        margin: 0 auto;
+        border: 1px solid $wht;
+        border-radius: 15px;
+        background-color: rgba($blk, 0.75);
+        color: $yel;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .facefront {
+        transform: rotateY(0deg) translateZ(calc(#{$faceWidth} / 2));
+    }
+
+    .facebackfront {
+        transform: rotateY(180deg) translateZ(calc(#{$faceWidth} / 2));
+
+    }
+
+    .faceright {
+        transform: rotateY(90deg) translateX(calc(#{$faceWidth} / 2));
+        transform-origin: right;
+    }
+
+    .faceleft {
+        transform: rotateY(-90deg) translateX(calc(#{0-$faceWidth} / 2));
+        transform-origin: left;
+    }
+
+    .facetop {
+        transform: rotateX(90deg) translateY(calc(#{0-$faceWidth} / 2));
+        transform-origin: top;
+        background-color: blue;
+        color: white;
+    }
+
+    .facebottom {
+        transform: rotateX(-90deg) translateY(calc(#{$faceWidth} / 2));
+        transform-origin: bottom;
+    }
+
+
+}
+
+
+
+.cube {
+    animation: ani 18s ease-in infinite
+}
+
+@keyframes ani {
+    100% {
+        transform: rotate3d(-24, -26, 1, 15deg) rotateY(720deg)
+    }
+}

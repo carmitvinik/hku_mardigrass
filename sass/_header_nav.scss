@@ -1,0 +1,46 @@
+header {
+
+    background: radial-gradient(circle, $grn 32%, $prp);
+    width: 100%;
+
+
+    h1 {
+        font-family: $hfont2;
+
+        img.logo {
+            width: 250px;
+            height: 150px;
+            border-radius: 260px 260px;
+            opacity: 0.75;
+            background-color: $yel;
+        }
+
+
+    }
+
+
+
+    nav {
+        background-color: $prp;
+
+        a {
+            background-color: $prp;
+            color: $wht;
+            font-family: $hfont1;
+            margin: 10px;
+        }
+
+        a:hover {
+            background-color: $blk;
+            border-radius: 25px;
+            color: $prp;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        button:focus,
+        button:active {
+            outline: 0;
+        }
+    }
+}

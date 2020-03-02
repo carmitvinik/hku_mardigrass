@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Henny+Penny|Pattaya|Roboto&display=swap');
+@import "colors";
+@import "fonts";
+@import "header_nav";
+@import "slider";
+@import "cube";
+@import "iframe_banner";
+@import "footer";
+@import "galery";
+@import "form";
+@import "trivya";
+
+
+.art {
+    font-family: $tfont1;
+    font-size: 1.5rem;
+    background-color: $blk;
+    border: 5px ridge $grn;
+    color: $yel;
+    min-height: 10em;
+
+    h2 {
+        font-family: $hfont2;
+    }
+
+    p {
+        width: 100%;
+
+    }
+
+    img {
+        width: 50%;
+
+    }
+}
+
+body {
+    background-color: $prp;
+}
+
+main {
+    background-color: $blk;
+}
+
+h2 {
+    font-family: $hfont2;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
